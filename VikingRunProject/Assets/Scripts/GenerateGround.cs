@@ -28,7 +28,6 @@ public class GenerateGround : MonoBehaviour
     {
         if (GlobalVariable.GeneratedCount == 0)
         {
-            Debug.Log(transform.localPosition);
             GlobalVariable.curGeneratedLoc = new Vector3(-76.88f,16.56f,-19.8f);
             GlobalVariable.GroundList0.Add(Ground0);
             GlobalVariable.GroundList0.Add(Ground1);

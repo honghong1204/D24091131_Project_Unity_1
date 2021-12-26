@@ -12,4 +12,5 @@ static class GlobalVariable
     public static int curScore = 0;
     public static List<Transform> GroundList0 = new List<Transform>();
     public static List<Transform> GroundList90 = new List<Transform>();
+    public static float curDistanceFromEnemy = 0;
 }
