@@ -6,7 +6,7 @@ public class FreeMoveTransformADWSJK : MonoBehaviour
 {
     MeshRenderer mr;
     float movingSpeed = 15f;
-    float JumpingForce = 400;
+    float JumpingForce = 350;
     Rigidbody rb;
     private Animator animator;
     // Start is called before the first frame update
@@ -31,8 +31,8 @@ public class FreeMoveTransformADWSJK : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             //transform.localPosition += movingSpeed * Time.deltaTime * this.transform.localEulerAngles;
-            transform.Translate(Vector3.forward * movingSpeed * Time.deltaTime);
-            animator.SetBool("BeginRun", true);
+                transform.Translate(Vector3.forward * movingSpeed * Time.deltaTime);
+                animator.SetBool("BeginRun", true);
             //Debug.Log(this.transform.localEulerAngles);
             //Debug.Log(Vector3.forward);
         }
@@ -49,7 +49,7 @@ public class FreeMoveTransformADWSJK : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J) )
         {
          Debug.Log(transform.position.y);
-            if(Physics.Raycast(transform.position,Vector3.down,0.5f))
+            if(Physics.Raycast(transform.position,Vector3.down,3))
             {
                 GetComponent<Rigidbody>().AddForce(JumpingForce * Vector3.up);
             }
