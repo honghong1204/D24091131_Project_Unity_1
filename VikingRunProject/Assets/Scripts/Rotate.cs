@@ -14,9 +14,17 @@ public class Rotate : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow)){
-            transform.Rotate(0,-30,0);
+            transform.Rotate(0,-90,0);
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            transform.Rotate(0, 90, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad1))
+        {
+            transform.Rotate(0, -30, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.Keypad3))
         {
             transform.Rotate(0, 30, 0);
         }

@@ -6,12 +6,13 @@ public class FreeMoveTransformADWSJK : MonoBehaviour
 {
     MeshRenderer mr;
     float movingSpeed = 15f;
-    float JumpingForce = 30;
+    float JumpingForce = 400;
     Rigidbody rb;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,30 +21,35 @@ public class FreeMoveTransformADWSJK : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector3.left * movingSpeed * Time.deltaTime);
+            animator.SetBool("BeginRun",true);
         }
         if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.right * movingSpeed * Time.deltaTime);
+            animator.SetBool("BeginRun", true);
         }
         if (Input.GetKey(KeyCode.W))
         {
             //transform.localPosition += movingSpeed * Time.deltaTime * this.transform.localEulerAngles;
             transform.Translate(Vector3.forward * movingSpeed * Time.deltaTime);
+            animator.SetBool("BeginRun", true);
             //Debug.Log(this.transform.localEulerAngles);
             //Debug.Log(Vector3.forward);
         }
         if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(Vector3.back * movingSpeed * Time.deltaTime);
+            animator.SetBool("BeginRun", true);
         }
         if (Input.GetKey(KeyCode.K))
         {
             transform.localPosition += movingSpeed * Time.deltaTime * Vector3.up;
+            animator.SetBool("BeginRun", true);
         }
-        if (Input.GetKey(KeyCode.J) )
+        if (Input.GetKeyDown(KeyCode.J) )
         {
          Debug.Log(transform.position.y);
-            if( transform.position.y <= 17.5)
+            if(Physics.Raycast(transform.position,Vector3.down,0.5f))
             {
                 GetComponent<Rigidbody>().AddForce(JumpingForce * Vector3.up);
             }
