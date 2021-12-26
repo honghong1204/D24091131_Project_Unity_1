@@ -9,4 +9,7 @@ static class GlobalVariable
     public static List<Transform> Grounds;
     public static int GeneratedCount = 0;
     public static Vector3 curGeneratedLoc;
+    public static int curScore = 0;
+    public static List<Transform> GroundList0 = new List<Transform>();
+    public static List<Transform> GroundList90 = new List<Transform>();
 }

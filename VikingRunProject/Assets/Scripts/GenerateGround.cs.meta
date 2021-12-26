@@ -3,7 +3,22 @@ guid: 61842218562cd1a4589c471a5b7a0a5c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Ground0: {fileID: 5775495762226275713, guid: df9cd27a823bb8e41ab64ca139a20cbc, type: 3}
+  - Ground0_90: {fileID: 808571797921833763, guid: 3ff9f00c2641f6d4d81a0b202800db67, type: 3}
+  - Ground1: {fileID: 6044565630150858781, guid: 8b35b146b21847244ae39330625cc5a7, type: 3}
+  - Ground1_90: {fileID: 4679747592012116419, guid: db01a5063f7e9f0428ac23384267fd3f, type: 3}
+  - Ground2: {fileID: 276359672459159900, guid: 10efaad4e4ab28a43b15cef945b81417, type: 3}
+  - Ground2_90: {fileID: 1139094700155303441, guid: f52d24af4795b414eb6210c5182d496e, type: 3}
+  - Ground3: {fileID: 7731321291211876945, guid: 9a7e43ae973fbf643b2d0fec11046c75, type: 3}
+  - Ground3_90: {fileID: 3027925398007270284, guid: 4bfcc16476663e04dab72df6c294ea31, type: 3}
+  - Ground4: {fileID: 5775495762226275713, guid: df9cd27a823bb8e41ab64ca139a20cbc, type: 3}
+  - Ground4_90: {fileID: 808571797921833763, guid: 3ff9f00c2641f6d4d81a0b202800db67, type: 3}
+  - Ground5: {fileID: 2483490399167739986, guid: 558155b2b2160be4899e134fbb8be079, type: 3}
+  - Ground5_90: {fileID: 7411015409571631239, guid: 6d254b9a4f5a89c42a0223b3994c31ff, type: 3}
+  - GroundHalf: {fileID: 7751983993285707532, guid: 71c117e7450628a4a90d01a423b99f74, type: 3}
+  - GroundHalf_90: {fileID: 3218688029628665229, guid: 76da31006568fdc4d909274b1b027c85, type: 3}
+  - NoFence: {fileID: 4000013876727562, guid: 175a395ab31858745b41e3f49607be2e, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

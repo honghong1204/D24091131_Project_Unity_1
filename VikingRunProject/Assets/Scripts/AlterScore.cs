@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Score5 : MonoBehaviour
+public class AlterScore : MonoBehaviour
 {
+    public int Score;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,11 @@ public class Score5 : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        GlobalVariable.curScore += Score;
+        Destroy(this.gameObject);
     }
 }
