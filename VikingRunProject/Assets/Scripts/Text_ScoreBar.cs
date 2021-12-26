@@ -18,6 +18,6 @@ public class Text_ScoreBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = "Current Score: "+ GlobalVariable.curScore + "\n" + "Distance From Enemy: " + Vector3.Distance(Distance_ObjectA.position, Distance_ObjectB.position) + "\nPress ESC to Back To Menu";
+        text.text = "Current Score: "+ GlobalVariable.curScore + "\n" + "Distance From Enemy: " + Vector3.Distance(Distance_ObjectA.position, Distance_ObjectB.position) + "\nCurrent Running Time:" + GlobalVariable.curRunningTime + "\nPress ESC to Back To Menu";
     }
 }

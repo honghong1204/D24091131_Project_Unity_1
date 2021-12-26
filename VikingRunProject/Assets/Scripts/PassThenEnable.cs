@@ -20,6 +20,8 @@ public class PassThenEnable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        GlobalVariable.StartCounting = true;
+        GlobalVariable.TimePassedBefore = Time.time;
         charToEnableForward1.GetComponent<AutoMoveForward>().enabled = true;
         charToEnableForward2.GetComponent<AutoMoveForward>().enabled = true;
     }

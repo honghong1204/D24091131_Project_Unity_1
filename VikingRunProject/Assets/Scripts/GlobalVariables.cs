@@ -13,4 +13,7 @@ static class GlobalVariable
     public static List<Transform> GroundList0 = new List<Transform>();
     public static List<Transform> GroundList90 = new List<Transform>();
     public static float curDistanceFromEnemy = 0;
+    public static float curRunningTime = 0;
+    public static bool StartCounting = false;
+    public static float TimePassedBefore = 0;
 }

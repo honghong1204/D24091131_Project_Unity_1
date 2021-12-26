@@ -5,7 +5,7 @@ using UnityEngine;
 public class FreeMoveTransformADWSJK : MonoBehaviour
 {
     MeshRenderer mr;
-    float movingSpeed = 15f;
+    public float movingSpeed = 10;
     float JumpingForce = 350;
     Rigidbody rb;
     private Animator animator;
