@@ -16,4 +16,6 @@ static class GlobalVariable
     public static float curRunningTime = 0;
     public static bool StartCounting = false;
     public static float TimePassedBefore = 0;
+    public static float LastJump = 0;
+    public static int DeadReason = 0;
 }

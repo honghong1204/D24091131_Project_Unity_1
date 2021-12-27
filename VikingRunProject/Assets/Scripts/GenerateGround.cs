@@ -59,7 +59,7 @@ public class GenerateGround : MonoBehaviour
         if (passed == false)
         {
             int curGen = Random.Range(0, 10);
-            if(GlobalVariable.GeneratedCount < 5)
+            if(GlobalVariable.GeneratedCount < 6)
             {
                 curGen = 1;
             }
@@ -68,7 +68,7 @@ public class GenerateGround : MonoBehaviour
             {  // slightly right
                 if (GlobalVariable.justGenerated != 0)
                 {
-                    //Debug.Log("A" + GlobalVariable.justGenerated);
+                    Debug.Log("A" + GlobalVariable.justGenerated);
                     Transform curJunction = Instantiate(NoFence, null);
                     curJunction.position = GlobalVariable.curGeneratedLoc + new Vector3(-7,0, -7);
                     Transform curGeneratedGround = Instantiate(Ground0, null);
@@ -80,7 +80,7 @@ public class GenerateGround : MonoBehaviour
                 }
                 else
                 {
-                    //Debug.Log("B" + GlobalVariable.justGenerated);
+                    Debug.Log("B" + GlobalVariable.justGenerated);
                     Transform curGeneratedGround = Instantiate(pickAGround(GlobalVariable.GroundList0), null);
                     curGeneratedGround.position = GlobalVariable.curGeneratedLoc + new Vector3(-7, 0, 0f);
                     passed = true;
@@ -93,7 +93,7 @@ public class GenerateGround : MonoBehaviour
             {  // slightly left
                 if (GlobalVariable.justGenerated != 90)
                 {
-                    //Debug.Log("C"+ GlobalVariable.justGenerated);
+                    Debug.Log("C" + GlobalVariable.justGenerated);
                     Transform curJunction = Instantiate(NoFence, null);
                     curJunction.position = GlobalVariable.curGeneratedLoc + new Vector3(-7, 0, -7);
                     Transform curGeneratedGround = Instantiate(Ground0_90, null);
@@ -105,7 +105,7 @@ public class GenerateGround : MonoBehaviour
                 }
                 else
                 {
-                    //Debug.Log("D" + GlobalVariable.justGenerated);
+                    Debug.Log("D" + GlobalVariable.justGenerated);
                     Transform curGeneratedGround = Instantiate(pickAGround(GlobalVariable.GroundList90), null);
                     curGeneratedGround.position = GlobalVariable.curGeneratedLoc + new Vector3(0, 0, -7);
                     passed = true;

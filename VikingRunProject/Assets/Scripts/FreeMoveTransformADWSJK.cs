@@ -9,6 +9,7 @@ public class FreeMoveTransformADWSJK : MonoBehaviour
     float JumpingForce = 350;
     Rigidbody rb;
     private Animator animator;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -46,13 +47,10 @@ public class FreeMoveTransformADWSJK : MonoBehaviour
             transform.localPosition += movingSpeed * Time.deltaTime * Vector3.up;
             animator.SetBool("BeginRun", true);
         }
-        if (Input.GetKeyDown(KeyCode.J) )
+        if (Input.GetKeyDown(KeyCode.J) && (GlobalVariable.StartCounting == false && Physics.Raycast(transform.position,Vector3.down, 0.2f) ||  (GlobalVariable.StartCounting == true && Time.time - GlobalVariable.LastJump > 1.5)))
         {
-         Debug.Log(transform.position.y);
-            if(Physics.Raycast(transform.position,Vector3.down,3))
-            {
                 GetComponent<Rigidbody>().AddForce(JumpingForce * Vector3.up);
-            }
+                GlobalVariable.LastJump = Time.time;
         }
 
     }
