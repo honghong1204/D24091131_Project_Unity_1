@@ -798,7 +798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596873327b8646e4784e5491145c96d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingSpeed: 15
+  movingSpeed: 12
 --- !u!54 &576662193
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -893,7 +893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46ee2fbe1768214469a05d5d773badb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
 --- !u!95 &576662201
 Animator:
   serializedVersion: 3
